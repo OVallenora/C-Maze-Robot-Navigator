@@ -9,7 +9,6 @@
 #include "graphics.h"
 #include "Maze.h"
 
-
 #define BLOCK_WIDTH (50)
 #define width  (BLOCK_WIDTH*X_SIZE + 100)
 #define height (BLOCK_WIDTH*Y_SIZE + 100)
@@ -22,7 +21,5 @@ void ChangeRobotCoordinates(Coordinate *robot, const int x, const int y);
 void MoveRobot(Coordinate *robot, const int index, char *image);
 int FindRobotPosition(Coordinate *robot);
 bool RobotAtMarker(Coordinate *robot); 
-
-
 
 #endif /* VISUALS_H */
