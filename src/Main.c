@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "Maze.h" 
-#include "Visuals.h"
-#include "graphics.h" 
+#include "../include/Maze.h" 
+#include "../include/Visuals.h"
+#include "../include/graphics.h" 
 
 bool CheckCommandLineInput(int xStart, int yStart)
 {
@@ -61,22 +61,22 @@ int main(int argc, char **argv)
         if (pSquares[index].move.x == 1)
         {
             index = index + X_SIZE;
-            MoveRobot(&robot, index, "eastrobot.png");
+            MoveRobot(&robot, index, "images/eastrobot.png");
         }
         else if (pSquares[index].move.x == -1)
         {
             index = index - X_SIZE;
-            MoveRobot(&robot, index, "westrobot.png");
+            MoveRobot(&robot, index, "images/westrobot.png");
         }
         else if (pSquares[index].move.y == 1)
         {
             index = index + 1;
-            MoveRobot(&robot, index, "northrobot.png");
+            MoveRobot(&robot, index, "images/northrobot.png");
         }
         else if (pSquares[index].move.y == -1)
         {
             index = index - 1;
-            MoveRobot(&robot, index, "southrobot.png");
+            MoveRobot(&robot, index, "images/southrobot.png");
         }
         else
         {
@@ -86,5 +86,3 @@ int main(int argc, char **argv)
     } while(RobotAtMarker(&robot) == false);
     return 0; 
 }
-
-
