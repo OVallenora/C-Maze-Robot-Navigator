@@ -1,4 +1,4 @@
-#include "Visuals.h"
+#include "../include/Visuals.h"
 
 void DrawGrid()
 {
@@ -15,12 +15,12 @@ void DrawGrid()
 
 void DrawHome()
 {
-    displayImage("home.png", 55+X_HOME*BLOCK_WIDTH, 5+(Y_SIZE-Y_HOME)*BLOCK_WIDTH);
+    displayImage("images/home.png", 55+X_HOME*BLOCK_WIDTH, 5+(Y_SIZE-Y_HOME)*BLOCK_WIDTH);
 }
 
 void DrawRobot(const int xStart, const int yStart)
 {
-    displayImage("northrobot.png", 55+xStart*BLOCK_WIDTH, 5+(Y_SIZE-yStart)*BLOCK_WIDTH);
+    displayImage("images/northrobot.png", 55+xStart*BLOCK_WIDTH, 5+(Y_SIZE-yStart)*BLOCK_WIDTH);
 }
 
 void DrawBlocks(Square *pSquares)
