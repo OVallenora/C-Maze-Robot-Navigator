@@ -1,4 +1,4 @@
-#include "Maze.h"
+#include "../include/Maze.h"
 
 //Allocate memory for the Maze's 2D squares
 Square *AllocateMazeMemory()
